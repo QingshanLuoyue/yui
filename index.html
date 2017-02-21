@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="build/yui.css">
+    <title>yui</title>
+    <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            background: #f5f5f5;
+        }
+        .horizontal {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .vertical {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .color-4b {
+            color: #4b4b4b!important;
+        }
+        .img {
+            width: 100%;
+            height: 100%;
+        }
+        #app {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1 class="yui_title">这是大标题，字数不能太多，否则会换行</h1>
+
+
+        <!-- 添加文件 -->
+        <div class="yui_cells_title">添加文件</div>
+        <div class="yui_flex_start yui_cells">
+            <div class="yui_cell">
+                <div class="yui_cell_hd">
+                    <label class="yui_label">附件：</label>
+                </div>
+                <div class="yui_cell_bd">
+                    <a class="yui_file_item" style="display: block; color: #386cda;">顶岗实习注意事项.doc</a>
+                    <a class="yui_file_item" style="color: #386cda;">顶岗实习注意事项.doc</a>
+                </div>
+            </div>
+        </div>
+        <!-- 添加图片 -->
+        <div class="yui_cells_title">添加图片</div>
+        <div class="yui_cells yui_cells_form">
+            <div class="yui_cell">
+                <div class="yui_cell_bd yui_cell_primary">
+                    <div class="yui_uploader">
+                        <div class="yui_uploader_hd yui_cell">
+                            <div class="yui_cell_bd yui_cell_primary">图片上传</div>
+                            <div class="yui_cell_ft">0/2</div>
+                        </div>
+                        <div class="yui_uploader_bd">
+                            <ul class="yui_uploader_files">
+                                <li class="yui_uploader_file" style="background-image:url('img/1.jpg')"></li>
+                            </ul>
+                            <div class="yui_uploader_input_wrp">
+                                <input class="yui_uploader_input" type="file" accept="image/jpg,image/jpeg,image/png,image/gif" multiple="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 带有右菜单的cell组合 -->
+        <div class="yui_cells_title">带有右菜单的cell组合</div>
+        <div class="yui_slide yui_media_box yui_media_appmsg">
+            <div class="yui_media_hd">
+                <img class="yui_media_appmsg_thumb" src="src/img/2.png" alt="">
+            </div>
+            <div class="yui_media_bd">
+                <h4 class="yui_media_title">陈育宜</h4>
+                <p class="yui_media_desc">经济管理系  09物流1班</p>
+            </div>
+            <div class="yui_cell_menu">
+                <div class="yui_navbar">
+                    <a class="yui_navbar_item">拨打电话</a>
+                    <a class="yui_navbar_item">微信会话</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 带有人物消息通知缩略 -->
+        <div class="yui_cells_title">带有人物消息通知缩略</div>
+        <div class="yui_cells yui_panel">
+            <a href="javascript:void(0);" class="yui_media_box yui_media_appmsg">
+                <div class="yui_media_hd" style="width: 27px;height: 27px;">
+                    <img class="yui_media_appmsg_thumb" src="src/img/2.png" alt="">
+                </div>
+                <div class="yui_media_bd">
+                    <h4 class="yui_media_title">黄东喜</h4>
+                </div>
+            </a>
+            <div class="yui_cell_species" style="padding-top: 10px;">
+                <a href="#" class="yui_cell_bd yui_cell_primary">典礼地点更换通知</a>
+            </div>
+            <div class="yui_cells_tips">[教务通知]</div>
+            <div class="yui_cells_tips">2016年09月01日  16:10</div>
+            <div class="yui_media_box">
+                <div class="yui_media_bd">
+                    <p class="yui_media_desc">各位同学注意，因教室维修原因，原定于今天下午在科技楼举行的颁奖典礼改为综合各位同学注意，因教室维修原因，原定于今天下午在科技楼举行的颁奖典礼改为综合</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 消息通知缩略 -->
+        <div class="yui_cells_title">消息通知缩略</div>
+        <div class="yui_cells yui_panel">
+            <div class="yui_cell">
+                <div class="yui_cell_bd yui_cell_primary">
+                    <p>典礼地点更换通知</p>
+                </div>
+            </div>
+            <div class="yui_cells_tips">[教务通知]</div>
+            <div class="yui_cells_tips">2016年09月01日  16:10</div>
+            <div class="yui_media_box">
+                <div class="yui_media_bd">
+                    <p class="yui_media_desc">各位同学注意，因教室维修原因，原定于今天下午在科技楼举行的颁奖典礼改为综合各位同学注意，因教室维修原因，原定于今天下午在科技楼举行的颁奖典礼改为综合</p>
+                </div>
+            </div>
+            <div class="yui_cell">
+                <p class="yui_cell_bd yui_cell_primary" style="text-align: center;font-size: 16px">
+                    <em style="color: #386cda">7</em><em>人未读</em>
+                </p>
+            </div>
+        </div>
+
+        <!-- 文章 -->
+        <div class="yui_cells_title">文章</div>
+        <article class="yui_article" style="padding-top: 5px;">
+            <h1 class="title">典礼地点更换通知</h1>
+            <section>
+                <h3 class="color-38">[教务通知]</h3>
+                <div class="yui_cell_space">
+                    <div class="yui_cells_tips yui_cell_primary">
+                        <span class="yui_cell_primary">2016年09月01日  16:10</span>
+                        <span class="yui_cell_ft" style="color: #d50000">未读7人</span>
+                    </div>
+                </div>
+                <p>各位同学注意，因教室维修原因，原定于今天下午在科技楼举行的颁奖典礼改为综合各位同学注意，因教室维修原因，原定于今天下午在科技楼举行的颁奖典礼改为综合</p>
+            </section>
+        </article>
+
+        <!--  图文组合 -->
+        <div class="yui_cells_title">图文组合</div>
+        <div class="yui_media_box yui_media_text yui_media_appmsg">
+            <div class="yui_media_hd">
+                <img src="src/img/2.png" alt="" class="yui_media_appmsg_thumb">
+            </div>
+            <div class="yui_media_bd">
+                <h4 class="yui_media_title">林俊福</h4>
+                <ul class="yui_media_info">
+                    <li class="yui_media_info_meta">今天11:46</li>
+                    <li class="yui_media_info_meta"><i class="iconfont icon-svg18" style="font-size: .5rem"></i>深圳</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 选项卡切换 -->
+        <div class="yui_cells_title">选项卡切换</div>
+        <div class="yui_column">
+            <div class="yui_navbar">
+                <a href="#" class="yui_navbar_item">待办</a>
+                <a href="#" class="yui_navbar_item yui_navbar_item_on">已办</a>
+            </div>
+        </div>
+        <!-- 查看问题解答、详情 -->
+        <div class="yui_cells_title">查看问题解答、详情</div>
+        <div class="yui_cells yui_cells_access">
+            <div class="yui_cell">
+                <i class="iconfont icon-pingguo"></i>
+                <div class="yui_cell_bd yui_cell_primary">苹果机型定位方法</div>
+                <div class="yui_cell_ft"></div>
+            </div>
+            <div class="yui_navbar">
+                <a href="#" class="yui_navbar_item">
+                    <p>A.进入【设置】</p>
+                    <img class="img" src="src/img/img1.jpg" alt="">
+                </a>
+                <a href="#" class="yui_navbar_item">
+                    <p>B.进入【设置】</p>
+                    <img class="img" src="src/img/img1.jpg" alt="">
+                </a>
+            </div>
+            <div class="yui_cell yui_sm">
+                <p class="yui_cells_tips">这是一段解说</p>
+            </div>
+        </div>
+        <!-- 通知模版 -->
+        <div class="yui_cells_title">通知模版</div>
+        <div class="horizontal">
+            <div class="yui_cells yui_panel">
+                <div class="yui_cell_species">
+                    <div class="yui_cell_bd yui_cell_primary">反馈评分通知</div>
+                    <div class="yui_cell_ft">
+                        <i class="iconfont icon-fujian" style="margin-right: 5px"></i>1
+                    </div>
+                </div>
+                <div class="yui_cells_tips">2016 - 09 - 05 16 : 20</div>
+                <div class="yui_sm yui_media_box">
+                    <div class="yui_media_bd">
+                        <h4>衷小辉老师已对你对你对你提交的反馈进行评分。</h4>
+                        <a href="#" class="yui_anchor">[查看评分]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 历史纪录 -->
+        <div class="yui_cells_title">历史纪录</div>
+        <div class="yui_history">——————— &nbsp;以下为历史纪录&nbsp; ———————</div>
+        <!-- 多内容换行展示 -->
+        <div class="yui_cells_title">多内容换行展示</div>
+        <div class="yui_flex_start">
+            <div class="yui_cell">
+                <div class="yui_cell_hd">注意：</div>
+                <div class="yui_cell_bd yui_cell_primary">部分手机不支持在线打开文件，请在电脑登录后
+                 进行查看。（http://www.58yunqi.com）</div>
+            </div>
+        </div>
+
+        <!-- 附件 -->
+        <div class="yui_cells_title">附件</div>
+        <div class="yui_cells yui_file">
+            <div class="yui_cell">
+                <div class="yui_cell_hd yui_file_hd">
+                    <i class="iconfont icon-fujian" style="margin-right: 5px"></i>
+                    顶岗实习注意事项.doc
+                </div>
+            </div>
+            <a class="yui_cell yui_file_item" style="color: #386cda;">
+                <div class="yui_cell_hd">
+                    顶岗实习注意事项.doc
+                </div>
+            </a>
+            <a class="yui_cell yui_file_item" style="color: #386cda;">
+                <div class="yui_cell_hd">
+                    顶岗实习注意事项.doc
+                </div>
+            </a>
+        </div>
+
+        <!-- 文本域 -->
+        <div class="yui_cells_title">文本域</div>
+        <div class="yui_cells">
+            <div class="yui_cell">
+                <div class="yui_cell_bd yui_cell_primary">
+                    <textarea class="yui_textarea" placeholder="请输入评论" rows="3"></textarea>
+                    <div class="yui_textarea_counter"><span>0</span>/200</div>
+                </div>
+            </div>
+        </div>
+        <!-- 填写表单排版 -->
+        <div class="yui_cells_title">填写表单排版</div>
+        <div class="yui_cells">
+            <div class="yui_cell">
+                <div class="yui_cell_hd">
+                    <label for="" class="yui_label">家庭联系人</label>
+                </div>
+                <div class="yui_cell_bd yui_cell_primary">
+                    <input type="text" class="yui_input" placeholder="请输入联系人姓名">
+                </div>
+            </div>
+            <div class="yui_cell">
+                <div class="yui_cell_hd">
+                    <label for="distict" class="yui_label">家庭地址</label>
+                </div>
+                <div class="yui_cell_bd yui_cell_primary">
+                    <input type="text" id="distict" class="yui_input" placeholder="请选择   |   请选择    |   请选择" readonly="readonly">
+                </div>
+            </div>
+            <div class="yui_cell">
+                <div class="yui_cell_bd yui_cell_primary">
+                    <input type="text" class="yui_input" placeholder="详细地址（街道大厦）">
+                </div>
+            </div>
+            <div class="yui_cell yui_cell_select yui_select_after">
+                <div class="yui_cell_hd">
+                    <label for="" class="yui_label">类&nbsp;&nbsp; 型：</label>
+                </div>
+                <div class="yui_cell_bd yui_cell_primary">
+                    <select class="yui_select" name="select2">
+                        <option value="1">教务通知</option>
+                        <option value="2">教务通知</option>
+                        <option value="3">教务通知</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    	<!-- 搜索 -->
+        <div class="yui_cells_title">搜索框</div>
+        <div class="yui_search">
+        	<div class="yui_search_form">
+    	        <input type="search" class="yui_search_input" name="button" value="" placeholder="搜索职位">
+    	        <button class="yui_search_icon" type="button">
+    	            <i class="iconfont icon-sousuo" style="font-size: 1.4em;"></i>
+    	        </button>
+        	</div>
+        </div>
+        <!-- 导航nav与底部tab -->
+        <!-- 导航nav -->
+        <div class="yui_tab" style="position:fixed;top:0;">
+    		<div class="yui_navbar yui_fix">
+    			<a href="#" class="yui_navbar_item yui_navbar_item_on">校园招聘</a>
+    			<a href="#" class="yui_navbar_item">实习录</a>
+    			<a href="#" class="yui_navbar_item">前程无忧</a>
+    		</div>
+    	</div>
+    	<!-- 底部tab -->
+    	<div class="yui_tab" style="position:fixed;bottom:0;">
+    		<div class="yui_tabbar yui_fix">
+    	        <a href="javascript:;" class="yui_tabbar_item">
+                    <i class="iconfont icon-renwu"></i>
+    	            <p class="yui_tabbar_label">待办事项</p>
+    	        </a>
+    	        <a href="javascript:;" class="yui_tabbar_item">
+                    <i class="iconfont icon-quanzi"></i>
+    	            <p class="yui_tabbar_label">实习指导</p>
+    	        </a>
+    	        <a href="javascript:;" class="yui_tabbar_item yui_tabbar_item_on">
+                    <i class="iconfont icon-dianpu"></i>
+    	            <p class="yui_tabbar_label">实习集市</p>
+    	        </a>
+    	        <a href="javascript:;" class="yui_tabbar_item">
+                    <i class="iconfont icon-wdqz"></i>
+    	            <p class="yui_tabbar_label">个人中心</p>
+    	        </a>
+        	</div>
+    	</div>
+    	<!-- 职位缩略信息 -->
+        <div class="yui_cells_title">职位缩略信息</div>
+    	<a href="#" class="yui_media_box">
+            <div class="yui_cell_space">
+                <h4 class="yui_media_title yui_cell_primary">售前售后技术支持</h4>
+                <div class="yui_cell_bd">
+                	<i class="iconfont icon-svg18"></i>
+                	<em>广州 | </em><em>越秀区</em>
+                </div>
+            </div>
+            <div class="yui_media_desc">广州银讯信息科技有限公司</div>
+            <ul class="yui_media_info">
+                <li class="yui_media_info_meta">2016-09-01</li>
+                <li class="yui_media_info_meta">|&nbsp; 若干 &nbsp;|</li>
+                <li class="yui_media_info_meta">2001~4000元/月</li>
+            </ul>
+        </a>
+        <!-- 单行cell -->
+        <div class="yui_cells_title">单行cell 有上下15px间距</div>
+        <div class="yui_cells">
+            <div class="yui_cell">
+                <div class="yui_cell_hd"><p>工作类型：</p></div>
+                <div class="yui_cell_bd"><p>全职</p></div>
+            </div>
+        </div>
+        <div class="yui_cells_title">单行cell 无上下15px间距</div>
+        <div class="yui_cells">
+        	<div class="yui_cell_species yui_bdr_b1" style="padding-left: 15px;">
+        		<div class="yui_cell_hd"><p>工作类型：</p></div>
+        		<div class="yui_cell_bd"><p>全职</p></div>
+        	</div>
+        </div>
+        <!-- 开关 -->
+        <div class="yui_cells_title">开关</div>
+    	<div class="yui_cell yui_cell_switch">
+            <div class="yui_cell_bd yui_cell_primary">标题文字</div>
+            <div class="yui_cell_ft">
+                <input class="yui_switch" type="checkbox">
+            </div>
+        </div>
+        <!-- 按钮 -->
+        <div class="yui_cells_title">按钮</div>
+        <!-- 宽按钮 -->
+        <div class="vertical horizontal">
+            <a href="javascript:;" class="yui_btn yui_btn_default">按钮</a>
+            <a href="javascript:;" class="yui_btn yui_btn_disabled yui_btn_default">按钮</a>
+            <a href="javascript:;" class="yui_btn yui_btn_active">按钮</a>
+            <a href="javascript:;" class="yui_btn yui_btn_disabled yui_btn_active">按钮</a>
+        </div>
+        <!-- 短按钮 -->
+        <div class="button_sp_area">
+            <a href="javascript:;" class="yui_btn yui_btn_default">按钮</a>
+            <a href="javascript:;" class="yui_btn yui_btn_disabled yui_btn_default">按钮</a>
+            <a href="javascript:;" class="yui_btn yui_btn_active">按钮</a>
+            <a href="javascript:;" class="yui_btn yui_btn_disabled yui_btn_active">按钮</a>
+        </div>
+        <!-- 操作结果提示 -->
+        <div class="yui_cells_title">操作结果提示</div>
+        <div class="yui_msg">
+            <div class="yui_icon_area">
+                <i class="iconfont icon-tjcg"></i>
+            </div>
+            <div class="yui_text_area">
+                <h2 class="yui_msg_title">操作成功</h2>
+                <p class="yui_msg_desc">内容详情，可根据实际需要安排</p>
+            </div>
+            <div class="yui_opr_area">
+                <p class="button_sp_area">
+                    <a href="javascript:;" class="yui_btn yui_btn_active">确定</a>
+                    <a href="javascript:;" class="yui_btn yui_btn_default">取消</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="build/build.js"></script> -->
+    <script src="src/js/jquery-1.11.3.min.js"></script>
+    <script src="src/js/yui.js"></script>
+</body>
+
+</html>

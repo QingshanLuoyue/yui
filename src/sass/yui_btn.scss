@@ -1,0 +1,84 @@
+/*按钮*/
+.yui_btn {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 2.33333333;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 60px;
+}
+
+/*设置按钮细边框*/
+.yui_btn:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(200, 199, 204, 1);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+  border-radius: 60px;
+}
+.yui_btn + .yui_btn {
+  margin-top: 15px;
+}
+
+/*灰色按钮*/
+.yui_btn_default {
+  color: #7d7d7d;
+}
+
+/*灰色按钮active效果*/
+.yui_btn_default:not(.yui_btn_disabled):active {
+  color: #a1a1a1;
+  background: #dedede;
+}
+
+/*灰色禁用按钮*/
+.yui_btn_default.yui_btn_disabled {
+  color: rgba(126, 126, 126, 0.6);
+}
+
+/*蓝色按钮*/
+.yui_btn_active {
+  color: #fff;
+  background: #386cda;
+}
+
+/*蓝色按钮active效果*/
+.yui_btn_active:not(.yui_btn_disabled):active {
+  color: rgba(255, 255, 255, 0.6);
+  background: #235edc;
+}
+
+/*蓝色禁用按钮*/
+.yui_btn_active.yui_btn_disabled {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*已做过按钮*/
+.yui_btn_done {
+  color: #fff;
+  background: #bcbcbc;
+}
+
+/*较小宽度按钮*/
+.button_sp_area {
+  width: 60%;
+  margin: 3.13em auto 0;
+  padding: 10px 0;
+  // font-size: 0;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+}

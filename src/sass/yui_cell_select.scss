@@ -1,0 +1,48 @@
+.yui_cell_select {
+    .yui_select {
+        padding-right: 30px;
+    }
+    .yui_access_icon {
+
+    }
+    .yui_cell_bd{
+        &:after{
+            content: " ";
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    height: 6px;
+    width: 6px;
+    border-width: 2px 2px 0 0;
+    border-color: #C8C8CD;
+    border-style: solid;
+    position: relative;
+    top: -2px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+        }
+    }
+}
+
+.yui_select {
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    width: 100%;
+    font-size: inherit;
+    height: auto;
+    // line-height: @weuiCellHeight;
+    position: relative;
+    z-index: 1;
+    color: #bcbcbc;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.yui_select_after {
+    .yui_select {
+        padding-left:0;
+    }
+}

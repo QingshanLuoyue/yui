@@ -1,0 +1,29 @@
+/*操作结果提示*/
+.yui_msg {
+  padding-top: 36px;
+  text-align: center;
+}
+
+/*icon图标*/
+.yui_icon_area {
+  margin-bottom: 15px;
+}
+.yui_icon_area .icon-tjcg {
+  color: #6a93ff;
+  font-size: 60px;
+}
+
+/*提示文本*/
+.yui_text_area {
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+.yui_msg_title {
+  margin-bottom: 5px;
+  color: #386cda;
+  font-size: 20px;
+}
+.yui_msg_desc {
+  color: #7e7e7e;
+  font-size: 14px;
+}

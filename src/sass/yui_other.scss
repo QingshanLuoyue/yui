@@ -1,0 +1,37 @@
+/*附件、文件*/
+.yui_file {
+	position: relative;
+	overflow: hidden;
+}
+.yui_file.yui_cells {
+	margin-top: 0;
+}
+.yui_file_hd {
+	font-size: 15px;
+}
+.yui_file_hd:after {
+	content: " ";
+	position: absolute;
+	left: 15px;
+	right: 0;
+	bottom: 0;
+	border-bottom: 1px solid #dcdcdc;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+}
+.yui_file_item {
+	font-size: 14px;
+}
+.yui_file .yui_file_item:before {
+	display: none;
+}
+
+/*历史纪录*/
+.yui_history {
+	margin: .7em 0;
+	color: #bcbcbc;
+	font-size: 14px;
+	text-align: center;
+}

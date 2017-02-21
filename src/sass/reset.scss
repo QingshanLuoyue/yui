@@ -1,0 +1,16 @@
+/*基础重置*/
+html{background:#fff;color:#4b4b4b;font-size:14px;font-family:'Microsoft YaHei',Arial,sans-serif;line-height:1.6;-webkit-text-size-adjust:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,button,textarea,p,blockquote,th,td,strong{margin:0;padding:0;font-family:'Microsoft YaHei',Arial,sans-serif;word-break:break-all;-webkit-appearance:none;}
+table{border-collapse:collapse;border-spacing:0;-webkit-appearance:none;}
+img{border:0;-webkit-appearance:none;}
+a{color:#343434;text-decoration:none;word-break:break-all;outline:none;-webkit-appearance:none;}
+a:hover{text-decoration:none;}
+var,em,strong{font-style:normal;word-break:break-all;-webkit-appearance:none;}
+em,strong,th,var{font-style:inherit;font-weight:inherit;}
+li{list-style:none;word-break:break-all;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;word-break:break-all;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;word-break:break-all;}
+input,button,textarea,select{*font-size:100%;border:none;}
+button{outline:none;}
+*{margin:0;padding:0;-webkit-tap-highlight-color:transparent;}

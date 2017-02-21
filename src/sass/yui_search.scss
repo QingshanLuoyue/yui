@@ -1,0 +1,40 @@
+/*搜索*/
+.yui_search {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: 10px 15px;
+}
+.yui_search_form {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding-left: 15px;
+  border: 1px solid #c8c7cc;
+  border-radius: 38px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  background: #fff;
+}
+.yui_search_input {
+  height: 2.5em;
+  background: transparent;
+  font-size: 14px;
+  line-height: 2.5em;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  outline: none;
+}
+.yui_search_icon {
+  position: relative;
+  width: 40px;
+  color: #386cda;
+  background: transparent;
+}
+.yui_search_icon i:active {
+  background: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,38 @@
+/*填写表单排版*/
+.yui_label {
+  display: block;
+  min-width: 6em;
+  font-size: 16px;
+}
+.yui_input {
+  width: 100%;
+  height: 1.41176471em;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.41176471;
+  outline: none;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+  color: #bcbcbc;
+  font-size: 14px;
+}
+input::-moz-placeholder,textarea::-moz-placeholder {
+  color: #bcbcbc;
+  font-size: 14px;
+}
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+  color: #bcbcbc;
+  font-size: 14px;
+}
+
+/*文本域*/
+.yui_textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+.yui_textarea_counter {
+    color: #B2B2B2;
+    text-align: right;
+}

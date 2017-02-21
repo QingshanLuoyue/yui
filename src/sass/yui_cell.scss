@@ -1,0 +1,168 @@
+/*大标题*/
+.yui_title {
+  position: relative;
+  padding: 1em 15px .5em;
+  color: #386cda;
+  font-size: 16px;
+  text-align: center;
+}
+
+/*************yui_cells_title,yui_cells_tips*************/
+.yui_cells_title,.yui_cells_tips {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #bcbcbc;
+  font-size: 13px;
+}
+/*小标题*/
+.yui_cells_title {
+  margin-top: .4em;
+  margin-bottom: .3em;
+}
+/*小提示*/
+.yui_cells_tips {
+  margin-top: .2em;
+}
+.yui_cell .yui_cells_tips,.yui_cell_space .yui_cells_tips,.yui_cell_species .yui_cells_tips {
+  padding-left: 0;
+  padding-right: 0;
+}
+.yui_cell .yui_cells_tips {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 13px;
+}
+.yui_cell + .yui_cells_tips {
+  margin-top: -10px;
+}
+
+/*************yui_cells*************/
+.yui_cells {
+  overflow: hidden;
+  position: relative;
+  margin-top: 1.17647059em;
+  background-color: #FFFFFF;
+  font-size: 17px;
+  line-height: 1.41176471;
+}
+/*第一个yui_cells去掉margin-top、与yui_cells_title相邻同样去掉margin-top*/
+.yui_cells:first-child,.yui_cells_title + .yui_cells {
+  margin-top: 0;
+}
+.yui_cells:before,.yui_cells:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-bottom: 1px solid #d9d9d9;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+.yui_cells:before {
+  top: 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  z-index: 1;
+}
+.yui_cells:after {
+  bottom: 0;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.yui_panel.yui_cells:before,.yui_panel.yui_cells:after {
+  display: none;
+}
+
+/*************yui_cell*************/
+.yui_cell,
+.yui_cell_sm,
+.yui_cell_space,
+.yui_cell_species {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/*内容从顶部开始排版*/
+.yui_flex_start .yui_cell {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: initial;
+  align-items: flex-start;
+}
+.yui_cell {
+  padding: 10px 15px;
+}
+.yui_cell.yui_sm {
+  padding: 8px 15px;
+}
+.yui_cell_species {
+  padding: 0 15px;
+}
+/*顶部细线*/
+.yui_cell:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 1px solid #dcdcdc;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+/*在yui_cells下的yui_cell的顶部细线左边界距离为15px*/
+.yui_cells .yui_cell:before {
+  left: 15px;
+}
+/*隐藏第一个yui_cell的顶部细线*/
+.yui_cell:first-child:before {
+  display: none;
+}
+.yui_media_box.yui_media_appmsg + .yui_cell_species:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-top: 1px solid #dcdcdc;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+}
+
+
+/*************other*************/
+.yui_cell_primary {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.yui_cell_ft {
+  float: right;
+  color: #4b4b4b;
+}
+/*如果有跳转项，给与yui_cell_ft一个右三角的伪元素*/
+.yui_cells_access .yui_cell_ft:before {
+  content: " ";
+  display: inline-block;
+  position: relative;
+  top: -1px;
+  width: 6px;
+  height: 6px;
+  margin-left: .3em;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8cd;
+  border-style: solid;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
