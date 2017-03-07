@@ -1,22 +1,29 @@
+%display-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%box-flex {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
 /*搜索*/
 .yui_search {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
+  @extend %display-box;
   margin: 10px 15px;
 }
 .yui_search_form {
   position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
+  @extend %display-box;
   padding-left: 15px;
   border: 1px solid #c8c7cc;
   border-radius: 38px;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
+  @extend %box-flex;
   background: #fff;
 }
 .yui_search_input {
@@ -24,9 +31,7 @@
   background: transparent;
   font-size: 14px;
   line-height: 2.5em;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
+  @extend %box-flex;
   outline: none;
 }
 .yui_search_icon {

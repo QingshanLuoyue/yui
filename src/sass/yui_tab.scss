@@ -1,3 +1,18 @@
+%display-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+%box-flex {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+$color-dc : #dcdcdc;
+$color-38 : #386cda;
+
 /*导航nav与底部tab*/
 .yui_tab {
   position: relative;
@@ -6,14 +21,12 @@
 
 /*导航nav*/
 .yui_navbar {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;  /*position: absolute;*/
+  @extend %display-box;
   top: 0;
   left: 0;
   width: 100%;
-  border-top: 1px solid #dcdcdc;
-  border-bottom: 1px solid #dcdcdc;
+  border-top: 1px solid $color-dc;
+  border-bottom: 1px solid $color-dc;
   background-color: #fff;
   z-index: 500;
 }
@@ -28,9 +41,7 @@
   color: #7e7e7e;
   font-size: 17px;
   text-align: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
+  @extend %box-flex;
 }
 .yui_navbar_item:after {
   content: " ";
@@ -38,7 +49,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  border-right: 1px solid #dcdcdc;
+  border-right: 1px solid $color-dc;
   -webkit-transform-origin: 100% 0;
   transform-origin: 100% 0;
   -webkit-transform: scaleX(0.5);
@@ -50,20 +61,18 @@
 
 /*选中状态*/
 .yui_navbar_item.yui_navbar_item_on {
-  background-color: #386cda;
+  background-color: $color-38;
   color: #fff;
 }
 
 /*底部tab*/
 .yui_tabbar {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;  /*position: absolute;*/
+  @extend %display-box;
   bottom: 0;
   left: 0;
   width: 100%;
-  border-top: 1px solid #dcdcdc;
-  border-bottom: 1px solid #dcdcdc;
+  border-top: 1px solid $color-dc;
+  border-bottom: 1px solid $color-dc;
   background-color: #fff;
   z-index: 500;
 }
@@ -74,15 +83,13 @@
   color: #b1bee8;
   font-size: 15px;
   text-align: center;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
+  @extend %box-flex;
 }
 .yui_tabbar_item .iconfont {
   color: #b1bee8;
 }
 .yui_tabbar_item.yui_tabbar_item_on, .yui_tabbar_item.yui_tabbar_item_on .iconfont {
-  color: #386cda;
+  color: $color-38;
 }
 .yui_tabbar_item .yui_tabbar_label {
   font-size: 11px;

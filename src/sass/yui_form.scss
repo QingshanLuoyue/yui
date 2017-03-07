@@ -12,15 +12,20 @@
   line-height: 1.41176471;
   outline: none;
 }
-input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+
+/*调整input的placeholder行高不对齐问题*/
+.yui_form .yui_input {
+  padding-bottom: 4px;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #bcbcbc;
   font-size: 14px;
 }
-input::-moz-placeholder,textarea::-moz-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
   color: #bcbcbc;
   font-size: 14px;
 }
-input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #bcbcbc;
   font-size: 14px;
 }
@@ -33,6 +38,122 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
   outline: none;
 }
 .yui_textarea_counter {
-    color: #B2B2B2;
-    text-align: right;
+  color: #B2B2B2;
+  text-align: right;
+}
+
+/*checkbox*/
+.yui_check_label {
+  -webkit-tap-highlight-color: transparent;
+}
+.yui_cells_checkbox .yui_cell_bd .yui_check_label {
+  padding: 0;
+}
+.yui_check {
+  position: absolute;
+  left: -9999em;
+}
+.yui_cells_checkbox .yui_cell_hd {
+  padding-right: 0.35em;
+}
+.yui_cells_checkbox .yui_icon_checked:before {
+  position: relative;
+  top: 1px;
+  content: '\E645';
+  color: #C9C9C9;
+  font-size: 23px;
+  display: block;
+  line-height: 1em;
+}
+.yui_cells_checkbox .yui_check:checked + .yui_icon_checked:before {
+  content: '\E65D';
+  color: #386cda;
+}
+.yui_uploader_hd {
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.yui_uploader_hd .yui_cell_ft {
+  font-size: 1em;
+}
+.yui_uploader_bd {
+  margin-bottom: -4px;
+  margin-right: -9px;
+  overflow: hidden;
+}
+.yui_uploader_files {
+  list-style: none;
+}
+.yui_uploader_file {
+  float: left;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  width: 79px;
+  height: 79px;
+  background: no-repeat center center;
+  background-size: cover;
+}
+.yui_uploader_status {
+  position: relative;
+}
+.yui_uploader_status:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.yui_uploader_status .yui_uploader_status_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+}
+.yui_uploader_status .yui_icon_warn {
+  display: block;
+}
+.yui_uploader_input_wrp {
+  float: left;
+  position: relative;
+  margin-right: 9px;
+  margin-bottom: 9px;
+  width: 77px;
+  height: 77px;
+  border: 1px solid #d9d9d9;
+}
+.yui_uploader_input_wrp:before, .yui_uploader_input_wrp:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+}
+.yui_uploader_input_wrp:before {
+  width: 2px;
+  height: 39.5px;
+}
+.yui_uploader_input_wrp:after {
+  width: 39.5px;
+  height: 2px;
+}
+.yui_uploader_input_wrp:active {
+  border-color: #999;
+}
+.yui_uploader_input_wrp:active:before, .yui_uploader_input_wrp:active:after {
+  background-color: #999;
+}
+.yui_uploader_input {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-tap-highlight-color: transparent;
 }
